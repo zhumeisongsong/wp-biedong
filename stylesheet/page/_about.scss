@@ -1,0 +1,27 @@
+.about-con {
+  padding-top: 4em;
+  padding-bottom: 2em;
+  text-align: justify;
+  line-height: 1.7;
+  color: map-get($global-color, g);
+  h2 {
+    @extend %h2;
+    margin: 0;
+    padding-top: 1.5em;
+    border-top: 2px solid map-get($global-color, a);
+    border-bottom:none;
+  }
+  h3 {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .text-con{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-top: 2px solid map-get($global-color, a);
+  }
+}

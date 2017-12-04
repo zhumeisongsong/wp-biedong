@@ -1,0 +1,23 @@
+/*footer*/
+.footer-con {
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 8em;
+  background-color: map_get($global-color, a);
+  color: map_get($global-color, c);
+  font-size: 12px;
+  font-family: "microsoft yahei", Arial, Verdana, sans-serif;
+  line-height: 1.4;
+  p{
+    margin-bottom: 20px;
+  }
+}
+@media(min-width: map-get($global-break,sm)){
+  .item-center{
+    float: right;
+  }
+  .item-right{
+    float: right;
+  }
+}
+

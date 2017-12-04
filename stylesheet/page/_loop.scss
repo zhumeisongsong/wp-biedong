@@ -1,0 +1,27 @@
+.main-loop {
+  .item-con {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    img {
+      text-align: center;
+    }
+    .hover-con {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #999;
+      opacity: 0;
+      transition: all .3s ease-in-out;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+    }
+    &:hover {
+      .hover-con {
+        opacity: 1;
+      }
+    }
+  }
+}

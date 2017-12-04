@@ -1,0 +1,39 @@
+.news-list {
+  padding-top: 4em;
+  .text-con {
+    padding-bottom: 1.5em;
+  }
+  article {
+    margin: 0;
+    border-top: 1px solid map-get($global-color, e);
+    padding: 1.5em 0 5em 0;
+    h1, h2 {
+      margin: 0;
+    }
+    h2 {
+      @extend %h2;
+      border-bottom: 1px solid map-get($global-color, a);
+    }
+    h1 {
+      padding-top: 1.5em;
+      padding-bottom: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      color: map-get($global-color, e);
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: map-get($global-break, md)) {
+  .news-list {
+    article {
+      img {
+        padding-left: 3em;
+      }
+    }
+  }
+}
