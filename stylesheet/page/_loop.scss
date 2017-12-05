@@ -17,14 +17,8 @@
       width: 100%;
       height: 100%;
       padding: 7% 0 0 15px;
-      background-color: #999;
       opacity: 0;
-      line-height: 1.8;
-      letter-spacing: 1px;
-      font-weight: bold;
-      color: #fff;
       background: linear-gradient(to bottom right, rgba(242, 0, 0, .8), rgba(164, 0, 13, .8));
-      text-transform: uppercase;
       transition: all .2s ease-in-out;
       -webkit-transition: all .2s ease-in-out;
       -moz-transition: all .2s ease-in-out;
@@ -35,6 +29,14 @@
       }
     }
   }
+}
+
+.cover-text {
+  text-transform: uppercase;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #fff;
 }
 
 @media(min-width: map-get($global-break, sm)) {

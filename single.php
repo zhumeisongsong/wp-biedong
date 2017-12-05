@@ -1,39 +1,39 @@
 <?php get_header(); ?>
 
-<main role="main" class="article-main">
-  <div class="detail-cover">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/header-list.jpg" alt="cover">
-  </div>
+<main role="main">
   <!-- section -->
   <section class="detail-con container">
-    <div class="col-xs-12">
+    <article class="row">
         <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-          <!-- article -->
-          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-            <!-- post title -->
-            <h1 class="article-title">
-              <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+          <div class="col-xs-12 col-md-5">
+            <h1 class="cover-text">
+                <?php $english = get_post_meta($post->ID, 'english', true);
+                echo $english; ?><br>
+                <?php $tag = get_post_meta($post->ID, 'tag', true);
+                echo $tag; ?><br>
+              ><br>
+                <?php the_title(); ?><br>
+                <?php $year = get_post_meta($post->ID, 'year', true);
+                echo $year; ?>
             </h1>
-            <!-- /post title -->
 
-            <!-- post details -->
-            <span class="date"><?php the_time('Y-j-m'); ?></span>
-            <!-- /post details -->
+          </div>
 
+          <div class="col-xs-12 col-md-7">
+            <div class="main-text">
+                <?php the_excerpt(); ?>
+            </div>
+          </div>
+
+          <div class="col-xs-12">
               <?php the_content(); ?>
-
-          </article>
+          </div>
         <?php endwhile; ?>
         <?php else: ?>
-
-          <article>
-            <h1><?php _e('Sorry, nothing to display.', 'html5blank'); ?></h1>
-          </article>
-
+            <?php _e('Sorry, nothing to display.'); ?>
         <?php endif; ?>
-    </div>
+    </article>
   </section>
   <!-- /section -->
 </main>

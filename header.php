@@ -31,7 +31,7 @@
            class="hidden-sm hidden-md hidden-lg">
     </a>
 
-    <a href="<?php echo home_url(); ?>" class="icon-search">
+    <a href="#" class="icon-search">
       <img src="<?php bloginfo('template_url'); ?>/image/icon-search.png" alt="search">
     </a>
 
@@ -44,37 +44,37 @@
     <div class="collapse navbar-collapse navbar-main-collapse navbar-right top-menu no-padding" id="navbar">
       <ul class="nav navbar-nav">
 
-        <li class="is-active">
+        <li id="index">
           <a href="<?php echo home_url(); ?>">
             <span class="active-text">品&nbsp;&nbsp;&nbsp;牌</span>
             <span class="normal-text">bread</span>
           </a>
         </li>
-        <li>
+        <li id="pack">
           <a href="<?php echo home_url(); ?>/index.php/category/pack/">
             <span class="active-text">包&nbsp;&nbsp;&nbsp;装</span>
             <span class="normal-text">pack</span>
           </a>
         </li>
-        <li>
+        <li id="sign">
           <a href="<?php echo home_url(); ?>/index.php/category/sign/">
             <span class="active-text">标&nbsp;&nbsp;&nbsp;志</span>
             <span class="normal-text">sign</span>
           </a>
         </li>
-        <li>
+        <li id="inset">
           <a href="<?php echo home_url(); ?>/index.php/category/inset/">
             <span class="active-text">插&nbsp;&nbsp;&nbsp;画</span>
             <span class="normal-text">inset</span>
           </a>
         </li>
-        <li>
+        <li id="about">
           <a href="<?php echo home_url(); ?>/index.php/about/">
             <span class="active-text">关&nbsp;&nbsp;&nbsp;于</span>
             <span class="normal-text">about</span>
           </a>
         </li>
-        <li>
+        <li id="news">
           <a href="<?php echo home_url(); ?>/index.php//news/">
             <span class="active-text">动&nbsp;&nbsp;&nbsp;态</span>
             <span class="normal-text">news</span>
@@ -85,3 +85,20 @@
 
   </div>
 </nav>
+
+<section class="search-con">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+        </div>
+
+        <div class="modal-body">
+          <input class="input" placeholder="KEYWORDS">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

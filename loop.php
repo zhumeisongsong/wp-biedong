@@ -7,13 +7,11 @@
             <?php if (has_post_thumbnail()) : ?>
               <a href="<?php the_permalink(); ?>">
                   <?php the_post_thumbnail(); ?>
-                <div class="hover-con">
-                    <?php the_excerpt(); ?><br>
-                    <?php $tag = get_the_tags();
-                    if ($tag) {
-                        $tag = $tag[0];
-                        echo $tag->name;
-                    } ?><br>
+                <div class="hover-con cover-text">
+                    <?php $english = get_post_meta($post->ID, 'english', true);
+                    echo $english; ?><br>
+                    <?php $tag = get_post_meta($post->ID, 'tag', true);
+                    echo $tag; ?><br>
                   ><br>
                     <?php the_title(); ?><br>
                     <?php $year = get_post_meta($post->ID, 'year', true);
