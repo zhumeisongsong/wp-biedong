@@ -2,7 +2,6 @@
 var swiper_init = function () {
     var mySwiper = new Swiper('.swiper-container', {
         autoplay: 5000,
-        pagination: '.swiper-pagination',
         prevButton: '.swiper-button-prev',
         nextButton: '.swiper-button-next',
         loop : true,

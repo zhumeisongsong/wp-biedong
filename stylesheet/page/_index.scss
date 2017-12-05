@@ -1,0 +1,13 @@
+.swiper-con {
+  padding-bottom: 15px;
+  img {
+    width: 100%;
+  }
+}
+
+@media(min-width: map-get($global-break, sm)) {
+  .swiper-con{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+}
