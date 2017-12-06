@@ -6,7 +6,6 @@ var swiper_init = function () {
     loop: true,
     preloadImages: false,
     updateOnImagesReady: true
-
   })
 }
 
@@ -19,6 +18,7 @@ var nav_link_active = function () {
   $('.nav>li>a').on('click', function () {
     var id = $(this).attr('id')
     sessionStorage.setItem('id', id)
+    window.location.href = $(this).data('href')
   })
 }
 

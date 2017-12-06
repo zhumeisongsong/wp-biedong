@@ -56,29 +56,15 @@ nav {
       font-weight: bold;
       color: map-get($global-color, d);
       text-transform: uppercase;
+      &:hover {
+        background-color: transparent;
+      }
       .active-text {
-        display: none;
         font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       }
       .normal-text {
+        display: none;
         font-family: "FZLTXHK", "方正兰亭中黑", "Hiragino Sans GB", "微软雅黑", "Microsoft JhengHei", sans-serif;
-      }
-      &:hover {
-        background-color: transparent;
-        .normal-text {
-          display: none;
-        }
-        .active-text {
-          display: block;
-        }
-      }
-      &.is-active {
-        .active-text {
-          display: block;
-        }
-        .normal-text {
-          display: none;
-        }
       }
     }
   }
@@ -110,8 +96,28 @@ nav {
         width: 50px;
         border-bottom: 2px solid transparent;
         text-align: center;
+        .active-text {
+          display: none;
+        }
+        .normal-text {
+          display: block;
+        }
+        &:hover {
+          .normal-text {
+            display: none;
+          }
+          .active-text {
+            display: block;
+          }
+        }
         &.is-active {
           border-bottom: 2px solid map-get($global-color, e);
+          .active-text {
+            display: block;
+          }
+          .normal-text {
+            display: none;
+          }
         }
       }
     }

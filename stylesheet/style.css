@@ -111,21 +111,13 @@ nav {
       font-weight: bold;
       color: #3a3a3a;
       text-transform: uppercase; }
-      .navbar-nav > li > a .active-text {
-        display: none;
-        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; }
-      .navbar-nav > li > a .normal-text {
-        font-family: "FZLTXHK", "方正兰亭中黑", "Hiragino Sans GB", "微软雅黑", "Microsoft JhengHei", sans-serif; }
       .navbar-nav > li > a:hover {
         background-color: transparent; }
-        .navbar-nav > li > a:hover .normal-text {
-          display: none; }
-        .navbar-nav > li > a:hover .active-text {
-          display: block; }
-      .navbar-nav > li > a.is-active .active-text {
-        display: block; }
-      .navbar-nav > li > a.is-active .normal-text {
-        display: none; }
+      .navbar-nav > li > a .active-text {
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; }
+      .navbar-nav > li > a .normal-text {
+        display: none;
+        font-family: "FZLTXHK", "方正兰亭中黑", "Hiragino Sans GB", "微软雅黑", "Microsoft JhengHei", sans-serif; }
 
 .navbar-collapse {
   width: 100%;
@@ -149,8 +141,20 @@ nav {
       width: 50px;
       border-bottom: 2px solid transparent;
       text-align: center; }
+      .navbar-nav > li > a .active-text {
+        display: none; }
+      .navbar-nav > li > a .normal-text {
+        display: block; }
+      .navbar-nav > li > a:hover .normal-text {
+        display: none; }
+      .navbar-nav > li > a:hover .active-text {
+        display: block; }
       .navbar-nav > li > a.is-active {
-        border-bottom: 2px solid #646464; } }
+        border-bottom: 2px solid #646464; }
+        .navbar-nav > li > a.is-active .active-text {
+          display: block; }
+        .navbar-nav > li > a.is-active .normal-text {
+          display: none; } }
 /*scroll animate*/
 .nav-animated.is-scroll {
   height: 55px !important;
