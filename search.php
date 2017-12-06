@@ -3,8 +3,6 @@
   <main role="main">
 
       <?php
-      $args = array(
-          'category_name' => 'brand');
       $posts = get_posts($args);
       get_template_part('loop');
       ?>
