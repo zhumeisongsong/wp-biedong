@@ -10,27 +10,11 @@ var swiper_init = function () {
   })
 }
 
-var modal = function (id) {
-  $(id).modal({
-    backdrop: true,
-    keyboard: true
-  })
-
-  $(window).on('shown.bs.modal', function () {
-    $('body').addClass('no-scroll')
-  })
-
-  $(window).on('hidden.bs.modal', function () {
-    $('body').removeClass('no-scroll')
-  })
-}
-
 var nav_link_active = function () {
   var id_active = sessionStorage.getItem('id')
   if (!id_active) {
     id_active = 'index'
   }
-  console.log($(id_active))
   $('#' + id_active).addClass('is-active')
   $('.nav').on('click', 'li', function () {
     var id = $(this).attr('id')
@@ -48,19 +32,35 @@ var nav_scroll = function (item, class_name) {
       $animated.removeClass(class_name)
     }
     if ($(this).scrollTop() > 200) {
-      $('.scroll-up').fadeIn();
+      $('.scroll-up').fadeIn()
     } else {
-      $('.scroll-up').fadeOut();
+      $('.scroll-up').fadeOut()
     }
   })
 }
 
+var search_modal = function () {
+  $('.icon-search').click(function () {
+    $('.modal').removeClass('search-hidden')
+    $('body').addClass('no-scroll')
+  })
+
+  $('.close').click(function () {
+    $('.modal').addClass('search-hidden')
+    $('body').removeClass('no-scroll')
+  })
+
+  $('.input').keydown(function () {
+    if (event.keyCode == "13") {
+      var url = $(this).data('search') + $(this).val()
+      window.location.href = url
+    }
+  })
+}
 
 $(function () {
   swiper_init()
   nav_link_active()
   nav_scroll(".nav-animated", "is-scroll")
-  $('.icon-search').click(function () {
-    modal('#myModal')
-  })
+  search_modal()
 })

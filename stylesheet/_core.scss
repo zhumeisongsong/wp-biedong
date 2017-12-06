@@ -72,6 +72,9 @@ a {
   margin-right: 0;
 }
 
+input,button{
+  outline: none;
+}
 
 @media(min-width: map-get($global-break, sm)) {
   main {

@@ -46,6 +46,9 @@ a {
   margin-left: 0;
   margin-right: 0; }
 
+input, button {
+  outline: none; }
+
 @media (min-width: 768px) {
   main {
     padding-top: 125px; } }
@@ -192,13 +195,52 @@ nav {
   .scroll-up {
     right: 50% !important;
     margin-right: -600px; } }
+.modal {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.95);
+  opacity: 1;
+  z-index: 99;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out; }
+  .modal .wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 4%;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .modal .wrapper button {
+      font-size: 30px;
+      padding-right: 20px;
+      padding-bottom: 4em;
+      color: #333;
+      opacity: 1; }
+    .modal .wrapper input {
+      width: 80%;
+      height: 44px;
+      line-height: 44px;
+      font-weight: bold;
+      margin: 0 10%;
+      padding: 0 15px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 1px solid #c2c0be; }
+
+.search-hidden {
+  opacity: 0 !important;
+  z-index: -99 !important; }
+
+.no-scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+
 .swiper-con {
   padding-bottom: 15px; }
   .swiper-con img {
     width: 100%; }
-
-.modal {
-  background-color: rgba(255, 255, 255, 0.8); }
 
 @media (min-width: 768px) {
   .swiper-con {

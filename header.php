@@ -86,19 +86,9 @@
   </div>
 </nav>
 
-<section class="search-con">
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-              aria-hidden="true">&times;</span></button>
-        </div>
-
-        <div class="modal-body">
-          <input class="input" placeholder="KEYWORDS">
-        </div>
-      </div>
-    </div>
+<div class="modal search-hidden">
+  <div class="wrapper">
+    <button type="button" class="close">&times;</button>
+    <input class="input" placeholder="KEYWORDS" data-search="<?php echo home_url(); ?>/?s=">
   </div>
-</section>
+</div>

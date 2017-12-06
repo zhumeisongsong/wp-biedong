@@ -5,10 +5,6 @@
   }
 }
 
-.modal {
-  background-color: rgba(255, 255, 255, .8);
-}
-
 @media(min-width: map-get($global-break, sm)) {
   .swiper-con {
     padding-left: 7.5px;
