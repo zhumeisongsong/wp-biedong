@@ -21,14 +21,14 @@
 
 <body>
 <!--nav bar-->
-<nav>
+<nav class="nav-animated">
   <div class="container no-padding">
     <!--logo-->
     <a class="navbar-brand" href="<?php echo home_url(); ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/image/logo.png" alt="<?php bloginfo('name'); ?>"
-           class="hidden-xs">
+           class="hidden-xs logo-big">
       <img src="<?php echo get_template_directory_uri(); ?>/image/logo-scroll.png" alt="<?php bloginfo('name'); ?>"
-           class="hidden-sm hidden-md hidden-lg">
+           class="logo-sm">
     </a>
 
     <a href="#" class="icon-search">

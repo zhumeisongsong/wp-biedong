@@ -17,8 +17,15 @@
         <p>属ICP备0000000号</p>
       </div>
     </div>
+
+    <!-- Scroll to top -->
+    <a href="#" class="scroll-up">
+      <img src="<?php echo get_template_directory_uri(); ?>/image/icon-top.png" alt="top">
+    </a>
+
   </div>
 </footer>
+
 
 <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

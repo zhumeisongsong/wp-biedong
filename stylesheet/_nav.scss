@@ -12,9 +12,13 @@ nav {
   display: block;
   height: 100%;
   padding: 15.5px 15px;
-  img {
+  .logo-sm {
     width: auto;
     height: 24px;
+  }
+  .logo-big {
+    width: auto;
+    height: 32px;
   }
 }
 
@@ -93,6 +97,11 @@ nav {
     height: 125px;
     padding-top: 35px;
   }
+  .navbar-brand {
+    .logo-sm {
+      display: none;
+    }
+  }
   .navbar-collapse {
     width: auto;
   }
@@ -109,6 +118,24 @@ nav {
           border-bottom: 2px solid map-get($global-color, e);
         }
       }
+    }
+  }
+}
+
+/*scroll animate*/
+.nav-animated {
+  &.is-scroll {
+    height: 55px!important;
+    padding-top:0;
+    background-color: map-get($global-color, primary);
+    transition: .2s all ease-in-out;
+    -webkit-transition: .2s all ease-in-out;
+    -moz-transition: .2s all ease-in-out;
+    .logo-big{
+      display: none;
+    }
+    .logo-sm{
+      display: block;
     }
   }
 }

@@ -9,7 +9,7 @@ body {
   background-color: #EDECEA;
   color: #3a3a3a;
   font-weight: 400;
-  font-family: "Hiragino Sans GB","微软雅黑","Microsoft JhengHei","WenQuanYi Micro Hei","Helvetica Neue",Verdana,Arial,Helvetica,sans-serif;
+  font-family: "Hiragino Sans GB", "微软雅黑", "Microsoft JhengHei", "WenQuanYi Micro Hei", "Helvetica Neue", Verdana, Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1; }
 
@@ -70,9 +70,12 @@ nav {
   display: block;
   height: 100%;
   padding: 15.5px 15px; }
-  .navbar-brand img {
+  .navbar-brand .logo-sm {
     width: auto;
     height: 24px; }
+  .navbar-brand .logo-big {
+    width: auto;
+    height: 32px; }
 
 .navbar-toggle {
   height: 100%;
@@ -130,6 +133,9 @@ nav {
     height: 125px;
     padding-top: 35px; }
 
+  .navbar-brand .logo-sm {
+    display: none; }
+
   .navbar-collapse {
     width: auto; }
 
@@ -141,6 +147,18 @@ nav {
       text-align: center; }
     .navbar-nav > li.is-active > a {
       border-bottom: 2px solid #646464; } }
+/*scroll animate*/
+.nav-animated.is-scroll {
+  height: 55px !important;
+  padding-top: 0;
+  transition: .2s all ease-in-out;
+  -webkit-transition: .2s all ease-in-out;
+  -moz-transition: .2s all ease-in-out; }
+  .nav-animated.is-scroll .logo-big {
+    display: none; }
+  .nav-animated.is-scroll .logo-sm {
+    display: block; }
+
 /*footer*/
 .footer-con {
   position: relative;
@@ -153,6 +171,16 @@ nav {
   line-height: 1.4; }
   .footer-con p {
     margin-bottom: 20px; }
+  .footer-con .container {
+    position: relative; }
+  .footer-con .scroll-up {
+    display: none;
+    position: fixed;
+    width: 44px;
+    right: 15px;
+    bottom: 30px; }
+    .footer-con .scroll-up img {
+      width: 100%; }
 
 @media (min-width: 768px) {
   .item-center {
@@ -160,6 +188,10 @@ nav {
 
   .item-right {
     float: right; } }
+@media (min-width: 1200px) {
+  .scroll-up {
+    right: 50% !important;
+    margin-right: -600px; } }
 .swiper-con {
   padding-bottom: 15px; }
   .swiper-con img {

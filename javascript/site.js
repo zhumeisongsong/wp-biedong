@@ -31,16 +31,35 @@ var nav_link_active = function () {
     id_active = 'index'
   }
   console.log($(id_active))
-  $('#'+id_active).addClass('is-active')
+  $('#' + id_active).addClass('is-active')
   $('.nav').on('click', 'li', function () {
     var id = $(this).attr('id')
     sessionStorage.setItem('id', id)
 
   })
 }
+
+var nav_scroll = function (item, class_name) {
+  $(window).scroll(function () {
+    var $animated = $(item)
+    if ($animated.length && $animated.offset().top > 2) {
+      $animated.addClass(class_name)
+    } else {
+      $animated.removeClass(class_name)
+    }
+    if ($(this).scrollTop() > 200) {
+      $('.scroll-up').fadeIn();
+    } else {
+      $('.scroll-up').fadeOut();
+    }
+  })
+}
+
+
 $(function () {
   swiper_init()
   nav_link_active()
+  nav_scroll(".nav-animated", "is-scroll")
   $('.icon-search').click(function () {
     modal('#myModal')
   })

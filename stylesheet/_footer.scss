@@ -8,16 +8,36 @@
   font-size: 12px;
   font-family: "microsoft yahei", Arial, Verdana, sans-serif;
   line-height: 1.4;
-  p{
+  p {
     margin-bottom: 20px;
   }
+  .container {
+    position: relative;
+  }
+  .scroll-up {
+    display: none;
+    position: fixed;
+    width: 44px;
+    right: 15px;
+    bottom: 30px;
+    img {
+      width: 100%;
+    }
+  }
 }
-@media(min-width: map-get($global-break,sm)){
-  .item-center{
+
+@media(min-width: map-get($global-break, sm)) {
+  .item-center {
     float: right;
   }
-  .item-right{
+  .item-right {
     float: right;
   }
 }
 
+@media (min-width: map-get($global-break, lg)) {
+  .scroll-up {
+    right: 50% !important;
+    margin-right: -600px;
+  }
+}
