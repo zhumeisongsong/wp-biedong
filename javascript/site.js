@@ -16,10 +16,9 @@ var nav_link_active = function () {
     id_active = 'index'
   }
   $('#' + id_active).addClass('is-active')
-  $('.nav').on('click', 'li', function () {
+  $('.nav>li>a').on('click', function () {
     var id = $(this).attr('id')
     sessionStorage.setItem('id', id)
-
   })
 }
 

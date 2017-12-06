@@ -72,9 +72,7 @@ nav {
           display: block;
         }
       }
-    }
-    &.is-active {
-      > a {
+      &.is-active {
         .active-text {
           display: block;
         }
@@ -112,9 +110,7 @@ nav {
         width: 50px;
         border-bottom: 2px solid transparent;
         text-align: center;
-      }
-      &.is-active {
-        > a {
+        &.is-active {
           border-bottom: 2px solid map-get($global-color, e);
         }
       }
@@ -125,16 +121,16 @@ nav {
 /*scroll animate*/
 .nav-animated {
   &.is-scroll {
-    height: 55px!important;
-    padding-top:0;
+    height: 55px !important;
+    padding-top: 0;
     background-color: map-get($global-color, primary);
     transition: .2s all ease-in-out;
     -webkit-transition: .2s all ease-in-out;
     -moz-transition: .2s all ease-in-out;
-    .logo-big{
+    .logo-big {
       display: none;
     }
-    .logo-sm{
+    .logo-sm {
       display: block;
     }
   }

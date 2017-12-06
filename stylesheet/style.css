@@ -122,10 +122,10 @@ nav {
           display: none; }
         .navbar-nav > li > a:hover .active-text {
           display: block; }
-    .navbar-nav > li.is-active > a .active-text {
-      display: block; }
-    .navbar-nav > li.is-active > a .normal-text {
-      display: none; }
+      .navbar-nav > li > a.is-active .active-text {
+        display: block; }
+      .navbar-nav > li > a.is-active .normal-text {
+        display: none; }
 
 .navbar-collapse {
   width: 100%;
@@ -149,8 +149,8 @@ nav {
       width: 50px;
       border-bottom: 2px solid transparent;
       text-align: center; }
-    .navbar-nav > li.is-active > a {
-      border-bottom: 2px solid #646464; } }
+      .navbar-nav > li > a.is-active {
+        border-bottom: 2px solid #646464; } }
 /*scroll animate*/
 .nav-animated.is-scroll {
   height: 55px !important;

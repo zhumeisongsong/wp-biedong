@@ -44,38 +44,38 @@
     <div class="collapse navbar-collapse navbar-main-collapse navbar-right top-menu no-padding" id="navbar">
       <ul class="nav navbar-nav">
 
-        <li id="index">
-          <a href="<?php echo home_url(); ?>">
+        <li>
+          <a href="<?php echo home_url(); ?>" id="index">
             <span class="active-text">品&nbsp;&nbsp;&nbsp;牌</span>
             <span class="normal-text">bread</span>
           </a>
         </li>
-        <li id="pack">
-          <a href="<?php echo home_url(); ?>/index.php/category/pack/">
+        <li>
+          <a href="<?php echo home_url(); ?>/index.php/category/pack/" id="pack">
             <span class="active-text">包&nbsp;&nbsp;&nbsp;装</span>
             <span class="normal-text">pack</span>
           </a>
         </li>
-        <li id="sign">
-          <a href="<?php echo home_url(); ?>/index.php/category/sign/">
+        <li>
+          <a href="<?php echo home_url(); ?>/index.php/category/sign/" id="sign">
             <span class="active-text">标&nbsp;&nbsp;&nbsp;志</span>
             <span class="normal-text">sign</span>
           </a>
         </li>
-        <li id="inset">
-          <a href="<?php echo home_url(); ?>/index.php/category/inset/">
+        <li>
+          <a href="<?php echo home_url(); ?>/index.php/category/inset/" id="inset">
             <span class="active-text">插&nbsp;&nbsp;&nbsp;画</span>
             <span class="normal-text">inset</span>
           </a>
         </li>
-        <li id="about">
-          <a href="<?php echo home_url(); ?>/index.php/about/">
+        <li>
+          <a href="<?php echo home_url(); ?>/index.php/about/" id="about">
             <span class="active-text">关&nbsp;&nbsp;&nbsp;于</span>
             <span class="normal-text">about</span>
           </a>
         </li>
-        <li id="news">
-          <a href="<?php echo home_url(); ?>/index.php//news/">
+        <li>
+          <a href="<?php echo home_url(); ?>/index.php//news/" id="news">
             <span class="active-text">动&nbsp;&nbsp;&nbsp;态</span>
             <span class="normal-text">news</span>
           </a>
