@@ -57,7 +57,7 @@
           </a>
         </li>
         <li>
-          <a href="javascript:;" id="sign"data-href="<?php echo home_url(); ?>/index.php/category/sign/">
+          <a href="<?php echo home_url(); ?>/index.php/category/sign/" id="sign">
             <span class="active-text">标&nbsp;&nbsp;&nbsp;志</span>
             <span class="normal-text">sign</span>
           </a>
