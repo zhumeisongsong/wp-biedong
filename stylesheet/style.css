@@ -115,6 +115,8 @@ nav {
         background-color: transparent; }
       .navbar-nav > li > a .active-text {
         font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; }
+        .navbar-nav > li > a .active-text span + span {
+          padding-left: 18px; }
       .navbar-nav > li > a .normal-text {
         display: none;
         font-family: "FZLTXHK", "方正兰亭中黑", "Hiragino Sans GB", "微软雅黑", "Microsoft JhengHei", sans-serif; }

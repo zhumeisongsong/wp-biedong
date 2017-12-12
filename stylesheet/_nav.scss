@@ -61,6 +61,9 @@ nav {
       }
       .active-text {
         font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+        span+span{
+          padding-left: 18px;
+        }
       }
       .normal-text {
         display: none;

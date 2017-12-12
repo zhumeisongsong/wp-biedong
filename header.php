@@ -46,38 +46,38 @@
 
         <li>
           <a href="<?php echo home_url(); ?>" id="index">
-            <span class="active-text">品&nbsp;&nbsp;&nbsp;牌</span>
-            <span class="normal-text">bread</span>
+            <div class="active-text"><span>品</span><span>牌</span></div>
+            <div class="normal-text">bread</div>
           </a>
         </li>
         <li>
           <a href="<?php echo home_url(); ?>/index.php/category/pack/" id="pack">
-            <span class="active-text">包&nbsp;&nbsp;&nbsp;装</span>
-            <span class="normal-text">pack</span>
+            <div class="active-text"><span>包</span><span>装</span></div>
+            <div class="normal-text">pack</div>
           </a>
         </li>
         <li>
           <a href="<?php echo home_url(); ?>/index.php/category/sign/" id="sign">
-            <span class="active-text">标&nbsp;&nbsp;&nbsp;志</span>
-            <span class="normal-text">sign</span>
+            <div class="active-text"><span>标</span><span>志</span></div>
+            <div class="normal-text">sign</div>
           </a>
         </li>
         <li>
           <a href="<?php echo home_url(); ?>/index.php/category/inset/" id="inset">
-            <span class="active-text">插&nbsp;&nbsp;&nbsp;画</span>
-            <span class="normal-text">inset</span>
+            <div class="active-text"><span>插</span><span>画</span></div>
+            <div class="normal-text">inset</div>
           </a>
         </li>
         <li>
           <a href="<?php echo home_url(); ?>/index.php/about/" id="about">
-            <span class="active-text">关&nbsp;&nbsp;&nbsp;于</span>
-            <span class="normal-text">about</span>
+            <div class="active-text"><span>关</span><span>于</span></div>
+            <div class="normal-text">about</div>
           </a>
         </li>
         <li>
           <a href="<?php echo home_url(); ?>/index.php//news/" id="news">
-            <span class="active-text">动&nbsp;&nbsp;&nbsp;态</span>
-            <span class="normal-text">news</span>
+            <div class="active-text"><span>动</span><span>态</span></div>
+            <div class="normal-text">news</div>
           </a>
         </li>
       </ul>
