@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/4.0.6/css/swiper.min.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheet/style.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
   <!--favicons-->
   <link rel="icon" href="<?php bloginfo('template_url'); ?>//image/logo-icon.png">
 </head>
@@ -51,31 +52,31 @@
           </a>
         </li>
         <li>
-          <a href="<?php echo home_url(); ?>/index.php/category/pack/" id="pack">
+          <a href="<?php echo home_url(); ?>/category/pack/" id="pack">
             <div class="active-text"><span>包</span><span>装</span></div>
             <div class="normal-text">pack</div>
           </a>
         </li>
         <li>
-          <a href="<?php echo home_url(); ?>/index.php/category/sign/" id="sign">
+          <a href="<?php echo home_url(); ?>/category/sign/" id="sign">
             <div class="active-text"><span>标</span><span>志</span></div>
             <div class="normal-text">sign</div>
           </a>
         </li>
         <li>
-          <a href="<?php echo home_url(); ?>/index.php/category/inset/" id="inset">
+          <a href="<?php echo home_url(); ?>/category/inset/" id="inset">
             <div class="active-text"><span>插</span><span>画</span></div>
             <div class="normal-text">inset</div>
           </a>
         </li>
         <li>
-          <a href="<?php echo home_url(); ?>/index.php/about/" id="about">
+          <a href="<?php echo home_url(); ?>/about/" id="about">
             <div class="active-text"><span>关</span><span>于</span></div>
             <div class="normal-text">about</div>
           </a>
         </li>
         <li>
-          <a href="<?php echo home_url(); ?>/index.php//news/" id="news">
+          <a href="<?php echo home_url(); ?>/news/" id="news">
             <div class="active-text"><span>动</span><span>态</span></div>
             <div class="normal-text">news</div>
           </a>
