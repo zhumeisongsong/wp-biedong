@@ -1,11 +1,13 @@
 var swiper_init = function () {
   var mySwiper = new Swiper('.swiper-container', {
-    autoplay: 5000,
-    prevButton: '.swiper-button-prev',
-    nextButton: '.swiper-button-next',
+    autoplay: true,
     loop: true,
     preloadImages: false,
-    updateOnImagesReady: true
+    updateOnImagesReady: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
   })
 }
 
