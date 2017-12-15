@@ -221,19 +221,17 @@ nav {
     padding-right: 15px; }
     .modal .wrapper button {
       font-size: 30px;
-      padding-right: 20px;
       padding-bottom: 4em;
       color: #333;
       opacity: 1; }
     .modal .wrapper input {
-      width: 80%;
-      height: 44px;
-      line-height: 44px;
+      width: 100%;
+      line-height: 1;
       font-weight: bold;
-      margin: 0 10%;
-      padding: 0 15px;
+      font-size: 36px;
       background-color: rgba(255, 255, 255, 0.95);
-      border: 1px solid #c2c0be; }
+      border: 0;
+      border-bottom: 4px solid #c2c0be; }
 
 .search-hidden {
   opacity: 0 !important;
@@ -246,6 +244,9 @@ nav {
   left: 0;
   bottom: 0; }
 
+@media (min-width: 992px) {
+  .modal .wrapper input {
+    font-size: 75px; } }
 .swiper-con {
   padding-bottom: 15px; }
   .swiper-con a {
