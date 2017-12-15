@@ -11,15 +11,19 @@ nav {
 .navbar-brand {
   display: block;
   height: 100%;
-  padding: 15.5px 15px;
+  padding: 0 15px;
   .logo-sm {
-    width: auto;
-    height: 21px;
+    width: 58px;
+    padding-top: 12px;
   }
   .logo-big {
-    width: auto;
-    height: 32px;
+    width: 180px;
+
   }
+}
+
+.navbar-collapse{
+  background-color: #fff;
 }
 
 .navbar-toggle {
@@ -60,14 +64,14 @@ nav {
         background-color: transparent;
       }
       .active-text {
-        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+        font-family: "FZLTXHK", "方正兰亭中黑", "Hiragino Sans GB", "微软雅黑", "Microsoft JhengHei", sans-serif;
         span+span{
           padding-left: 18px;
         }
       }
       .normal-text {
         display: none;
-        font-family: "FZLTXHK", "方正兰亭中黑", "Hiragino Sans GB", "微软雅黑", "Microsoft JhengHei", sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       }
     }
   }

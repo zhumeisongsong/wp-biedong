@@ -15,10 +15,8 @@
           <?php if ($posts) : ?>
               <?php foreach ($posts as $post) :
                   setup_postdata($post); ?>
-              <a href="<?php the_permalink(); ?>">
-                <div class="swiper-slide">
-                    <?php the_post_thumbnail(); ?>
-                </div>
+              <a class="swiper-slide" href="<?php the_permalink(); ?>">
+                  <?php the_post_thumbnail(); ?>
               </a>
               <?php endforeach; ?>
           <?php endif; ?>
