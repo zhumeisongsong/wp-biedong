@@ -32,7 +32,7 @@
            class="logo-sm">
     </a>
 
-    <a href="#" class="icon-search">
+    <a href="javascript:;" class="icon-search">
       <img src="<?php bloginfo('template_url'); ?>/image/icon-search.png" alt="search">
     </a>
 
@@ -48,7 +48,7 @@
         <li>
           <a href="<?php echo home_url(); ?>" id="index">
             <div class="active-text"><span>品</span><span>牌</span></div>
-            <div class="normal-text">bread</div>
+            <div class="normal-text">brand</div>
           </a>
         </li>
         <li>

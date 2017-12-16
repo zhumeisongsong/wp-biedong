@@ -42,12 +42,16 @@ var nav_scroll = function (item, class_name) {
 
 var search_modal = function () {
   $('.icon-search').click(function () {
-    $('.modal').removeClass('search-hidden')
+    $('.top-menu').animate({opacity: '0'})
+    $('.icon-search').animate({opacity: '0'})
+    $('.modal').delay(400).fadeIn()
     $('body').addClass('no-scroll')
   })
 
   $('.close').click(function () {
-    $('.modal').addClass('search-hidden')
+    $('.modal').fadeOut()
+    $('.top-menu').delay(400).animate({opacity: '1'})
+    $('.icon-search').delay(400).animate({opacity: '1'})
     $('body').removeClass('no-scroll')
   })
 
