@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-8 item-left">
-        <p>Copyright 2017 Biedong Design<br>All Rights Reserved</p>
+        <p>Copyright 2017 BEANIMALSTUDIO All Rights Reserved</p>
       </div>
 
       <div class="col-xs-12 col-sm-4 col-md-2 item-center">

@@ -90,6 +90,6 @@
 <div class="modal search-hidden">
   <div class="wrapper">
     <button type="button" class="close">&times;</button>
-    <input class="input" placeholder="KEYWORDS" data-search="<?php echo home_url(); ?>/?s=">
+    <input class="input" placeholder=" 相信我，你并不孤独" data-search="<?php echo home_url(); ?>/?s=">
   </div>
 </div>
