@@ -332,8 +332,11 @@ nav {
     width: 100%; }
 
 .swiper-button-prev, .swiper-button-next {
-  background-image: url("../image/arrow.svg");
-  opacity: .5; }
+  background-image: url("../image/arrow.png");
+  opacity: .8;
+  width: 44px;
+  height: 44px;
+  background-size: 44px; }
 
 .swiper-button-next {
   transform: rotate(180deg); }
