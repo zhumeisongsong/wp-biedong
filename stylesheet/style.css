@@ -331,6 +331,13 @@ nav {
   .swiper-con img {
     width: 100%; }
 
+.swiper-button-prev, .swiper-button-next {
+  background-image: url("../image/arrow.svg");
+  opacity: .5; }
+
+.swiper-button-next {
+  transform: rotate(180deg); }
+
 @media (min-width: 768px) {
   .swiper-con {
     padding-left: 7.5px;
