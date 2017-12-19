@@ -131,7 +131,7 @@ input, button {
     padding-top: 125px; } }
 .news-list article h2, .about-con h2 {
   padding-bottom: 1.5em;
-  color: #f60;
+  color: #e62129;
   font-family: "Gotham SSm A", "Gotham SSm B";
   font-weight: 500;
   font-size: 15px;
@@ -154,7 +154,8 @@ nav {
     width: 58px;
     padding-top: 12px; }
   .navbar-brand .logo-big {
-    width: 180px; }
+    width: 99px;
+    padding-top: 10px; }
 
 .navbar-collapse {
   background-color: #fff; }

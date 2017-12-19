@@ -17,8 +17,8 @@ nav {
     padding-top: 12px;
   }
   .logo-big {
-    width: 180px;
-
+    width: 99px;
+    padding-top: 10px;
   }
 }
 
@@ -107,7 +107,7 @@ nav {
           text-indent: -6px;
         }
       }
-      &:nth-child(4){
+      &:nth-child(4) {
         padding-right: 20px;
         .normal-text {
           text-indent: -4px;
