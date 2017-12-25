@@ -27,7 +27,7 @@
     <!--logo-->
     <a class="navbar-brand" href="<?php echo home_url(); ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/image/logo.png" alt="<?php bloginfo('name'); ?>"
-           class="hidden-xs logo-big">
+           class="logo-big">
       <img src="<?php echo get_template_directory_uri(); ?>/image/logo-scroll.png" alt="<?php bloginfo('name'); ?>"
            class="logo-sm">
     </a>

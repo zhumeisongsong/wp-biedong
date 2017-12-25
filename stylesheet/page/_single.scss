@@ -10,14 +10,26 @@
     color: map-get($global-color, h);
   }
   .main-text {
-    padding: 15px 0 30px 0;
+    padding: 15px 0 6em 0;
     border-top: 2px solid map-get($global-color, a);
     text-align: justify;
     line-height: 1.7;
     color: map-get($global-color, g);
+    hr {
+      border-bottom: 1px solid map-get($global-color, a);
+    }
   }
   img {
     width: 100%;
     height: auto;
+  }
+
+}
+
+@media (min-width: map-get($global-break, sm)+1px) {
+  .detail-con{
+    .main-text{
+      padding-bottom: 30px;
+    }
   }
 }

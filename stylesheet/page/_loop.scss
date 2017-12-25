@@ -1,7 +1,12 @@
 .main-loop {
+  .row{
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
   .item-con {
     padding-bottom: 15px;
-
+    padding-left: 7.5px;
+    padding-right: 7.5px;
   }
   a {
     position: relative;
@@ -16,17 +21,12 @@
       top: 0;
       width: 100%;
       height: 100%;
-      padding: 7% 0 0 15px;
+      padding: 7% 15px 0 15px;
       opacity: 0;
       background: linear-gradient(to bottom right, rgba(242, 0, 0, 1), rgba(164, 0, 13, 1));
       transition: all .2s ease-in-out;
       -webkit-transition: all .2s ease-in-out;
       -moz-transition: all .2s ease-in-out;
-    }
-    &:hover {
-      .hover-con {
-        opacity: 1;
-      }
     }
   }
 }
@@ -41,9 +41,16 @@
 
 @media(min-width: map-get($global-break, sm)) {
   .main-loop {
-    .item-con {
-      padding-left: 7.5px;
-      padding-right: 7.5px;
+    .row{
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    a{
+      &:hover {
+        .hover-con {
+          opacity: 1;
+        }
+      }
     }
   }
 }
