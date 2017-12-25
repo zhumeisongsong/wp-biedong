@@ -93,7 +93,7 @@
     <header>包<br>装<br>pack</header>
       <?php
       $args = array(
-          'category_name' => 'brand',
+          'category_name' => 'pack',
           'showposts' => '6');
       $posts = get_posts($args);
       get_template_part('loop');
@@ -127,7 +127,7 @@
     <header>标<br>志<br>sign</header>
       <?php
       $args = array(
-          'category_name' => 'brand',
+          'category_name' => 'sign',
           'showposts' => '6');
       $posts = get_posts($args);
       get_template_part('loop');
@@ -161,7 +161,7 @@
     <header>插<br>画<br>inset</header>
       <?php
       $args = array(
-          'category_name' => 'brand',
+          'category_name' => 'inset',
           'showposts' => '6');
       $posts = get_posts($args);
       get_template_part('loop');
