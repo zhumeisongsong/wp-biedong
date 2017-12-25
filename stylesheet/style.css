@@ -367,7 +367,18 @@ nav {
   display: none; }
 
 .main-sp {
-  display: block; }
+  display: block;
+  padding-bottom: 0; }
+
+/**
+ * sp layout
+ */
+.commercial-con {
+  background-color: #fff; }
+  .commercial-con a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
 .category-section {
   background-color: #fff; }
@@ -379,6 +390,8 @@ nav {
     line-height: 1.7;
     color: #e62129;
     font-weight: bold; }
+  .category-section .swiper-con {
+    background-color: #EDECEA; }
 
 @media (min-width: 768px) {
   .swiper-con {

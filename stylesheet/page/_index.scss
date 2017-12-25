@@ -62,18 +62,34 @@
 
 .main-sp {
   display: block;
+  padding-bottom: 0;
 }
 
-.category-section{
+/**
+ * sp layout
+ */
+.commercial-con {
   background-color: #fff;
-  header{
+  a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.category-section {
+  background-color: #fff;
+  header {
     width: 100%;
     padding: 25px 0;
     text-align: center;
     text-transform: uppercase;
     line-height: 1.7;
-    color: map-get($global-color,h);
-    font-weight:bold;
+    color: map-get($global-color, h);
+    font-weight: bold;
+  }
+  .swiper-con {
+    background-color: map-get($global-color, b);
   }
 }
 
