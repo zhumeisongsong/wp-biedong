@@ -374,11 +374,16 @@ nav {
  * sp layout
  */
 .commercial-con {
+  width: 100%;
+  overflow: hidden;
   background-color: #fff; }
   .commercial-con a {
+    width: 100%;
     display: block;
     margin-top: 10px;
     margin-bottom: 10px; }
+    .commercial-con a img {
+      width: 100%; }
 
 .category-section {
   background-color: #fff; }

@@ -128,7 +128,7 @@
       <?php
       $args = array(
           'category_name' => 'sign',
-          'showposts' => '6');
+          'numberposts' => '6');
       $posts = get_posts($args);
       get_template_part('loop');
       ?>
@@ -162,7 +162,7 @@
       <?php
       $args = array(
           'category_name' => 'inset',
-          'showposts' => '6');
+          'numberposts' => '6');
       $posts = get_posts($args);
       get_template_part('loop');
       ?>
