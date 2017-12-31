@@ -29,7 +29,8 @@
 
     <?php
     $args = array(
-        'category_name' => 'brand');
+        'category_name' => 'brand',
+        'posts_per_page' => -1);
     $posts = get_posts($args);
     get_template_part('loop');
     ?>
@@ -60,7 +61,7 @@
       <?php
       $args = array(
           'category_name' => 'brand',
-          'showposts' => '6');
+          'numberposts' => '6');
       $posts = get_posts($args);
       get_template_part('loop');
       ?>
@@ -74,12 +75,12 @@
             );
             $posts = get_posts($args);
             ?>
-            <?php if ($posts) : ?>
-                <?php foreach ($posts as $post) :
+            <?php if ($posts) :
+                foreach ($posts as $post) :
                     setup_postdata($post); ?>
-                <a class="swiper-slide" href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail(); ?>
-                </a>
+                  <a class="swiper-slide" href="<?php the_permalink(); ?>">
+                      <?php the_post_thumbnail(); ?>
+                  </a>
                 <?php endforeach; ?>
             <?php endif; ?>
         </div>
@@ -94,14 +95,13 @@
       <?php
       $args = array(
           'category_name' => 'pack',
-          'showposts' => '6');
+          'numberposts' => '6');
       $posts = get_posts($args);
       get_template_part('loop');
       ?>
     <section class="container no-padding swiper-con">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-
             <?php
             $args = array(
                 'category_name' => 'swiper-banner-2'
