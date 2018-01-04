@@ -397,6 +397,16 @@ nav {
     font-weight: bold; }
   .category-section .swiper-con {
     background-color: #EDECEA; }
+  .category-section .container {
+    padding-left: 7px;
+    padding-right: 7px; }
+    .category-section .container .row {
+      margin-left: -3.5px;
+      margin-right: -3.5px; }
+    .category-section .container .item-con {
+      padding-left: 3.5px;
+      padding-right: 3.5px;
+      padding-bottom: 7px; }
 
 @media (min-width: 768px) {
   .swiper-con {
