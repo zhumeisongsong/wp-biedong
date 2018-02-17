@@ -57,12 +57,15 @@
             <div class="normal-text">pack</div>
           </a>
         </li>
-        <li>
+		
+    <!--
+		<li>
           <a href="<?php echo home_url(); ?>/index.php/category/sign/" id="sign">
             <div class="active-text"><span>标</span><span>志</span></div>
             <div class="normal-text">sign</div>
           </a>
         </li>
+	-->
         <li>
           <a href="<?php echo home_url(); ?>/index.php/category/inset/" id="inset">
             <div class="active-text"><span>插</span><span>画</span></div>
