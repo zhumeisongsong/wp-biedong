@@ -24,6 +24,7 @@
       </div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 
@@ -54,10 +55,11 @@
           <?php endforeach; ?>
       <?php endif; ?>
   </section>
-<br/>
+  <br/>
+
   <!--brand-->
   <section class="category-section">
-  	<section class="container no-padding swiper-con">
+    <section class="container no-padding swiper-con">
       <div class="swiper-container">
         <div class="swiper-wrapper">
 
@@ -87,30 +89,6 @@
       $posts = get_posts($args);
       get_template_part('loop');
       ?>
-    <!--
-	<section class="container no-padding swiper-con">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-
-            <?php
-            $args = array(
-                'category_name' => 'swiper-banner'
-            );
-            $posts = get_posts($args);
-            ?>
-            <?php if ($posts) :
-                foreach ($posts as $post) :
-                    setup_postdata($post); ?>
-                  <a class="swiper-slide" href="<?php the_permalink(); ?>">
-                      <?php the_post_thumbnail(); ?>
-                  </a>
-                <?php endforeach; ?>
-            <?php endif; ?>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-	-->
   </section>
 
   <!--pack-->
@@ -146,45 +124,9 @@
       ?>
   </section>
 
-  <!--sign-->
- <!--
-  <section class="category-section">
-    <header>标<br>志<br>sign</header>
-      <?php
-      $args = array(
-          'category_name' => 'sign',
-          'numberposts' => '6');
-      $posts = get_posts($args);
-      get_template_part('loop');
-      ?>
-    <section class="container no-padding swiper-con">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-
-            <?php
-            $args = array(
-                'category_name' => 'swiper-banner-3'
-            );
-            $posts = get_posts($args);
-            ?>
-            <?php if ($posts) : ?>
-                <?php foreach ($posts as $post) :
-                    setup_postdata($post); ?>
-                <a class="swiper-slide" href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail(); ?>
-                </a>
-                <?php endforeach; ?>
-            <?php endif; ?>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-</section> -->
-
-  
   <!--inset-->
   <section class="category-section">
-	<section class="container no-padding swiper-con">
+    <section class="container no-padding swiper-con">
       <div class="swiper-container">
         <div class="swiper-wrapper">
 
