@@ -55,10 +55,12 @@
           <?php endforeach; ?>
       <?php endif; ?>
   </section>
-  <br/>
 
   <!--brand-->
   <section class="category-section">
+    <header>
+      <img src="<?php echo get_template_directory_uri(); ?>/image/title-brand.jpg" alt="品牌">
+    </header>
     <section class="container no-padding swiper-con">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -81,12 +83,10 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <header>
-      <img src="<?php echo get_template_directory_uri(); ?>/image/title-brand.jpg" alt="品牌">
-    </header>
+
       <?php
       $args = array(
-          'category_name' => 'brand',
+          'category_name' => 'brand-wap',
           'numberposts' => '6');
       $posts = get_posts($args);
       get_template_part('loop');
@@ -95,6 +95,9 @@
 
   <!--pack-->
   <section class="category-section">
+    <header>
+      <img src="<?php echo get_template_directory_uri(); ?>/image/title-pack.jpg" alt="包装">
+    </header>
     <section class="container no-padding swiper-con">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -116,12 +119,9 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <header>
-      <img src="<?php echo get_template_directory_uri(); ?>/image/title-pack.jpg" alt="包装">
-    </header>
       <?php
       $args = array(
-          'category_name' => 'pack',
+          'category_name' => 'pack-wap',
           'numberposts' => '6');
       $posts = get_posts($args);
       get_template_part('loop');
@@ -130,6 +130,9 @@
 
   <!--inset-->
   <section class="category-section">
+    <header>
+      <img src="<?php echo get_template_directory_uri(); ?>/image/title-inset.jpg" alt="插画">
+    </header>
     <section class="container no-padding swiper-con">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -152,12 +155,9 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <header>
-      <img src="<?php echo get_template_directory_uri(); ?>/image/title-inset.jpg" alt="插画">
-    </header>
       <?php
       $args = array(
-          'category_name' => 'inset',
+          'category_name' => 'inset-wap',
           'numberposts' => '6');
       $posts = get_posts($args);
       get_template_part('loop');

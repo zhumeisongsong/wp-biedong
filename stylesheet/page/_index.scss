@@ -75,10 +75,11 @@
   a {
     width: 100%;
     display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
     img {
       width: 100%;
+    }
+    +a{
+      margin-top: 10px;
     }
   }
 }
@@ -87,7 +88,7 @@
   background-color: #fff;
   header {
     width: 100%;
-    padding-left: 10px;
+    padding-left: 30px;
     img{
       width: auto;
       height: 90px;
