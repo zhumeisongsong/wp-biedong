@@ -81,7 +81,9 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <header>品<br>牌<br>brand</header>
+    <header>
+      <img src="<?php echo get_template_directory_uri(); ?>/image/title-brand.jpg" alt="品牌">
+    </header>
       <?php
       $args = array(
           'category_name' => 'brand',
@@ -114,7 +116,9 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <header>包<br>装<br>pack</header>
+    <header>
+      <img src="<?php echo get_template_directory_uri(); ?>/image/title-pack.jpg" alt="包装">
+    </header>
       <?php
       $args = array(
           'category_name' => 'pack',
@@ -148,7 +152,9 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <header>插<br>画<br>inset</header>
+    <header>
+      <img src="<?php echo get_template_directory_uri(); ?>/image/title-inset.jpg" alt="插画">
+    </header>
       <?php
       $args = array(
           'category_name' => 'inset',

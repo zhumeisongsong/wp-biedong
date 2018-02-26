@@ -389,12 +389,10 @@ nav {
   background-color: #fff; }
   .category-section header {
     width: 100%;
-    padding: 25px 0;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1.7;
-    color: #e62129;
-    font-weight: bold; }
+    padding-left: 10px; }
+    .category-section header img {
+      width: auto;
+      height: 90px; }
   .category-section .swiper-con {
     background-color: #EDECEA; }
   .category-section .container {

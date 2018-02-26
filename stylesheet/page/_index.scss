@@ -87,12 +87,11 @@
   background-color: #fff;
   header {
     width: 100%;
-    padding: 25px 0;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1.7;
-    color: map-get($global-color, h);
-    font-weight: bold;
+    padding-left: 10px;
+    img{
+      width: auto;
+      height: 90px;
+    }
   }
   .swiper-con {
     background-color: map-get($global-color, b);
