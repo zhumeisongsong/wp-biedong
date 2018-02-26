@@ -85,6 +85,7 @@
 }
 
 .category-section {
+  width: 100%;
   background-color: #fff;
   header {
     width: 100%;
@@ -93,9 +94,6 @@
       width: auto;
       height: 90px;
     }
-  }
-  .swiper-con {
-    background-color: map-get($global-color, b);
   }
   .container {
     padding-left: 7px;
@@ -109,6 +107,9 @@
       padding-right: 3.5px;
       padding-bottom: 7px;
     }
+  }
+  +.category-section{
+    margin-top: -15px;
   }
 }
 

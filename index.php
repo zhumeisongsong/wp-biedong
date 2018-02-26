@@ -83,14 +83,39 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-
-      <?php
-      $args = array(
-          'category_name' => 'brand-wap',
-          'numberposts' => '6');
-      $posts = get_posts($args);
-      get_template_part('loop');
-      ?>
+    <section class="container main-loop">
+      <div class="row">
+          <?php
+          $args = array(
+              'category_name' => 'brand-wap',
+              'posts_per_page' => 6
+          );
+          $loop = new WP_Query($args);
+          while ($loop->have_posts()):
+              $loop->the_post(); ?>
+            <div class="col-xs-6 col-md-4 item-con">
+                <?php if (has_post_thumbnail()) : ?>
+                  <a href="<?php the_permalink(); ?>">
+                      <?php the_post_thumbnail(); ?>
+                    <div class="hover-con cover-text">
+                        <?php $english = get_post_meta($post->ID, 'english', true);
+                        echo $english; ?><br>
+                        <?php $tag = get_post_meta($post->ID, 'tag', true);
+                        echo $tag; ?><br>
+                      ><br>
+                        <?php the_title(); ?><br>
+                        <?php $year = get_post_meta($post->ID, 'year', true);
+                        echo $year; ?>
+                    </div>
+                  </a>
+                <?php endif; ?>
+            </div>
+              <?php
+          endwhile;
+          wp_reset_query();
+          ?>
+      </div>
+    </section>
   </section>
 
   <!--pack-->
@@ -119,13 +144,39 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-      <?php
-      $args = array(
-          'category_name' => 'pack-wap',
-          'numberposts' => '6');
-      $posts = get_posts($args);
-      get_template_part('loop');
-      ?>
+    <section class="container main-loop">
+      <div class="row">
+          <?php
+          $args = array(
+              'category_name' => 'pack-wap',
+              'posts_per_page' => 6
+          );
+          $loop = new WP_Query($args);
+          while ($loop->have_posts()):
+              $loop->the_post(); ?>
+            <div class="col-xs-6 col-md-4 item-con">
+                <?php if (has_post_thumbnail()) : ?>
+                  <a href="<?php the_permalink(); ?>">
+                      <?php the_post_thumbnail(); ?>
+                    <div class="hover-con cover-text">
+                        <?php $english = get_post_meta($post->ID, 'english', true);
+                        echo $english; ?><br>
+                        <?php $tag = get_post_meta($post->ID, 'tag', true);
+                        echo $tag; ?><br>
+                      ><br>
+                        <?php the_title(); ?><br>
+                        <?php $year = get_post_meta($post->ID, 'year', true);
+                        echo $year; ?>
+                    </div>
+                  </a>
+                <?php endif; ?>
+            </div>
+              <?php
+          endwhile;
+          wp_reset_query();
+          ?>
+      </div>
+    </section>
   </section>
 
   <!--inset-->
@@ -136,7 +187,6 @@
     <section class="container no-padding swiper-con">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-
             <?php
             $args = array(
                 'category_name' => 'swiper-banner-3'
@@ -155,13 +205,41 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-      <?php
-      $args = array(
-          'category_name' => 'inset-wap',
-          'numberposts' => '6');
-      $posts = get_posts($args);
-      get_template_part('loop');
-      ?>
+
+    <section class="container main-loop">
+      <div class="row">
+          <?php
+          $args = array(
+              'category_name' => 'inset-wap',
+              'posts_per_page' => 6
+          );
+          $loop = new WP_Query($args);
+          while ($loop->have_posts()):
+              $loop->the_post(); ?>
+            <div class="col-xs-6 col-md-4 item-con">
+                <?php if (has_post_thumbnail()) : ?>
+                  <a href="<?php the_permalink(); ?>">
+                      <?php the_post_thumbnail(); ?>
+                    <div class="hover-con cover-text">
+                        <?php $english = get_post_meta($post->ID, 'english', true);
+                        echo $english; ?><br>
+                        <?php $tag = get_post_meta($post->ID, 'tag', true);
+                        echo $tag; ?><br>
+                      ><br>
+                        <?php the_title(); ?><br>
+                        <?php $year = get_post_meta($post->ID, 'year', true);
+                        echo $year; ?>
+                    </div>
+                  </a>
+                <?php endif; ?>
+            </div>
+              <?php
+          endwhile;
+          wp_reset_query();
+          ?>
+      </div>
+    </section>
+
   </section>
 </main>
 <?php get_footer(); ?>
