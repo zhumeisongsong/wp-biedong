@@ -24,9 +24,11 @@
       color: map-get($global-color, e);
     }
     p{
+      display: block;
       text-align: justify;
       line-height: 1.6;
       color: map-get($global-color, e);
+      word-break: break-all;
     }
     img {
       display: block;
