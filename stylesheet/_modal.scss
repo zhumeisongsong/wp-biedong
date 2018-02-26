@@ -30,13 +30,3 @@
   left: 0;
   bottom: 0;
 }
-
-@media (min-width: map-get($global-break, md)) {
-  .modal {
-    .wrapper {
-      input {
-        font-size: 75px;
-      }
-    }
-  }
-}

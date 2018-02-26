@@ -320,9 +320,6 @@ nav {
   left: 0;
   bottom: 0; }
 
-@media (min-width: 992px) {
-  .modal .wrapper input {
-    font-size: 75px; } }
 .swiper-con {
   padding-bottom: 15px; }
   .swiper-con .swiper-wrapper {
