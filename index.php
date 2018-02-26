@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<!--pc-->
 <main role="main" class="main-pc">
   <!--swiper-->
   <section class="container swiper-con">
@@ -37,7 +38,7 @@
     ?>
 
 </main>
-
+<!--sp-->
 <main role="main" class="main-sp">
   <!--commercial-->
   <section class="commercial-con">
