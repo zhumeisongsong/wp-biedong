@@ -9,7 +9,8 @@
 
           <?php
           $args = array(
-              'category_name' => 'swiper-banner'
+              'category_name' => 'swiper-banner',
+              'posts_per_page' => 10
           );
           $posts = get_posts($args);
           ?>
@@ -68,7 +69,8 @@
 
             <?php
             $args = array(
-                'category_name' => 'swiper-banner-4'
+                'category_name' => 'swiper-banner-4',
+                'posts_per_page' => 10
             );
             $posts = get_posts($args);
             ?>
@@ -129,7 +131,8 @@
         <div class="swiper-wrapper">
             <?php
             $args = array(
-                'category_name' => 'swiper-banner-2'
+                'category_name' => 'swiper-banner-2',
+                'posts_per_page' => 10
             );
             $posts = get_posts($args);
             ?>
@@ -190,7 +193,8 @@
         <div class="swiper-wrapper">
             <?php
             $args = array(
-                'category_name' => 'swiper-banner-3'
+                'category_name' => 'swiper-banner-3',
+                'posts_per_page' => 10
             );
             $posts = get_posts($args);
             ?>
